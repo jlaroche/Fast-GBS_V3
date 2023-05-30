@@ -3,6 +3,9 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# Pour ne pas suivre le wiki
+wiki/
+
 # Node artifact files
 node_modules/
 dist/
