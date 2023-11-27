@@ -1,12 +1,10 @@
 #!/bin/bash
-#SBATCH -D /project/fbelzile/users/mader122/PostDoc/fastgbs_2_gta/Barley
 #SBATCH -J GTA_Barley
 #SBATCH -o logs_slurm/GTA_Barley-%j.out
 #SBATCH -c 8
 #SBATCH -p soyagen
-#SBATCH -A soyagen
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=maxime.de-ronne.1@ulaval.ca
+#SBATCH --mail-user=
 #SBATCH --time=10-00:00
 #SBATCH --mem=50G
 
@@ -23,4 +21,4 @@ module load platypus/0.8.1.1
 
 ulimit -S -n 40000
 
-./fastgbs_V3.sh parameters_V2.txt
+./fastgbs_V3.sh parameters_V3.txt
